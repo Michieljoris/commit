@@ -28,16 +28,16 @@ module.exports = {
     //
     // Leave off redundant affixes like `node-package` or `package-js`. 
     // We know it is JavaScript for Node.
-    "name": "gitjs",
+    "name": "commit",
     // A single line, or sometimes slightly longer, description of our package.
     "description": "Simple git repos sync",
     // [npm](http://npmjs.org) enforces the X.Y.Z semantic version 
     // scheme that is described at [http://semver.org/](http://semver.org/)
     // and we should follow this versioning for our package.
     //Comment out go auto increase version on execution of this file
-    "version": "0.1.0",
+    // "version": "0.1.0",
     // URL to the homepage for this package.
-    "homepage": "https://github.com/michieljoris/gitjs",
+    "homepage": "https://github.com/michieljoris/commit",
     // An array of keywords used to describe this package to search engines,
     // mainly for people searching within the npm universe.
     "keywords": [
@@ -46,7 +46,7 @@ module.exports = {
     // Where is the source of truth for this code, and what type of repo is it?
     "repository": {
         "type": "git",
-        "url": "https://github.com/michieljoris/gitjs.git"
+        "url": "https://github.com/michieljoris/commit.git"
     },
     // Every package should have at least one author. There are a couple of
     // formats for the author. I prefer the explicit object format as follows:
@@ -63,13 +63,24 @@ module.exports = {
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://github.com/michieljoris/gitjs/blob/master/LICENSE.txt"
+            "url": "http://github.com/michieljoris/commit/blob/master/LICENSE.txt"
         }
     ],
     // If there is a file that should be loaded when require()ing this 
     // folder-as-a-package, declare this file here, relative to our package 
     // structure.
-    "main": "gitjs.js",
+    // "main": "commit.js",
+    
+    //Installs a binary script called http-server which is linked to
+    //./bin/http-server in the local package.
+
+    // If we have installed this package globally using npm install http-server
+    // -g we will be able to call this new command http-server from anywhere on
+    // our system.
+    "bin": {
+	"commit": "./bin/commit.js"
+    },
+    
     // Essentially, which Node.js platforms do we support? These are glob
     // like expressions supported by the 
     // [npm semantic version parser](https://npmjs.org/doc/semver.html), 
@@ -94,7 +105,8 @@ module.exports = {
         // "bb-server": "git://github.com/michieljoris/bb-server.git",
         // "html-builder": "git://github.com/michieljoris/html-builder.git",
         // "fs-extra": "0.8.x"
-        "gift" : "0.1.x"
+        "gift" : "0.1.x",
+        "colors" : "*"
         
 	// "nodemailer": "*",
 	// "dbox": "*",
@@ -134,7 +146,7 @@ module.exports = {
     //     npm run-script docs
     "scripts": {
         // "docs": "node node_modules/.bin/doccoh package.js"
-        "docs": "node node_modules/.bin/docco src/gitjs.js"
+        // "docs": "node node_modules/.bin/docco src/commit.js"
     }
 };
 

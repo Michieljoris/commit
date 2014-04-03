@@ -1,12 +1,11 @@
 {
-  "name": "gitjs",
+  "name": "commit",
   "description": "Simple git repos sync",
-  "version": "0.1.0",
-  "homepage": "https://github.com/michieljoris/gitjs",
+  "homepage": "https://github.com/michieljoris/commit",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/michieljoris/gitjs.git"
+    "url": "https://github.com/michieljoris/commit.git"
   },
   "author": {
     "name": "Michiel van Oosten",
@@ -16,19 +15,21 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/michieljoris/gitjs/blob/master/LICENSE.txt"
+      "url": "http://github.com/michieljoris/commit/blob/master/LICENSE.txt"
     }
   ],
-  "main": "src/gitjs.js",
+  "bin": {
+    "commit": "./bin/commit.js"
+  },
   "engines": {
     "node": ">= 0.6.x"
   },
   "dependencies": {
-    "gift": "0.1.x"
+    "gift": "0.1.x",
+    "colors": "*"
   },
   "devDependencies": {},
   "private": false,
-  "scripts": {
-    "docs": "node node_modules/.bin/docco src/gitjs.js"
-  }
+  "scripts": {},
+  "version": "0.1.2"
 }
