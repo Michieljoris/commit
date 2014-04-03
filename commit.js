@@ -1,6 +1,8 @@
 require('colors');
 var git  = require( 'gift');
 
+console.log(process.platform);
+
 // console.log(git);
 
 // https://github.com/notatestuser/gift
@@ -40,7 +42,7 @@ function sync(repoPath, cb) {
                         cb();
                     }
                     else {
-                        var message = 'gitjs sync ' + new Date();
+                        var message = 'Sync ' + new Date();
                         console.log('Commiting: ' + message);
                         
                         repo.commit(message, function(err) {
