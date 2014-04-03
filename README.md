@@ -1,22 +1,7 @@
-project_scaffold
---------------
+gitjs
+-----------
 
-Clone the repo
+Simple utility to sync my repos to github and back again.
 
-mv path/to/project_scaffold path/to/projectname
-
-cd path/to/projectname
-
-rm -IR .git
-
-npm install
-
-Edit package.js
-
-node package.js
-
-Rinse and repeat the last two steps.
-
-
-
+Simplifies things when switching from desktop to laptop and back.
 

@@ -4,11 +4,17 @@ var git  = require( 'gift');
 // https://github.com/notatestuser/gift
 
 var repoPaths = [
-  "/home/michieljoris/mysrc/javascript/cachejs"  
+  "/home/michieljoris/mysrc/javascript/cachejs",
+  "/home/michieljoris/mysrc/javascript/bb-server", 
+  "/home/michieljoris/mysrc/javascript/html-builder", 
+  "/home/michieljoris/mysrc/javascript/recaster", 
+  "/home/michieljoris/mysrc/javascript/url_washer",
+  "/home/michieljoris/www/sites/firstdoor"
+    
 ];
 
-var repo = git(repoPaths[0]);
 function sync(repoPath, cb) {
+    var repo = git(repoPath);
     console.log("Processing:", repo.path);
     repo.status(function(err, repoStatus) {
         if (err) {
@@ -25,7 +31,7 @@ function sync(repoPath, cb) {
                         cb();
                     }
                     else {
-                        var message = 'gitjs sync ' + new Date();
+                            var message = 'gitjs sync ' + new Date();
                         console.log('Commiting: ' + message);
                         
                         repo.commit(message, function(err) {
@@ -47,6 +53,7 @@ function sync(repoPath, cb) {
                 });
             
             }
+            else cb();
         
         }
     });
