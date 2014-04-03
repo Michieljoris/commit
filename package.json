@@ -1,13 +1,9 @@
 {
   "name": "gitjs",
-  "description": "",
+  "description": "Simple git repos sync",
   "version": "0.1.0",
   "homepage": "https://github.com/michieljoris/gitjs",
-  "keywords": [
-    "scaffold",
-    "seed",
-    "template"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/michieljoris/gitjs.git"
@@ -15,7 +11,7 @@
   "author": {
     "name": "Michiel van Oosten",
     "email": "mail@axion5.net",
-    "url": "http://blog.axion5.net/"
+    "url": "http://www.axion5.net/"
   },
   "licenses": [
     {
@@ -23,17 +19,16 @@
       "url": "http://github.com/michieljoris/gitjs/blob/master/LICENSE.txt"
     }
   ],
-  "main": "gitjs.js",
+  "main": "src/gitjs.js",
   "engines": {
     "node": ">= 0.6.x"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "fs-extra": "0.3.x",
-    "doccoh": "0.4.1"
+  "dependencies": {
+    "gift": "0.1.x"
   },
+  "devDependencies": {},
   "private": false,
   "scripts": {
-    "dist": "node dist; node_modules/.bin/doccoh src/package.js"
+    "docs": "node node_modules/.bin/docco src/gitjs.js"
   }
 }

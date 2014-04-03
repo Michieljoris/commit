@@ -30,17 +30,18 @@ module.exports = {
     // We know it is JavaScript for Node.
     "name": "gitjs",
     // A single line, or sometimes slightly longer, description of our package.
-    "description": "",
+    "description": "Simple git repos sync",
     // [npm](http://npmjs.org) enforces the X.Y.Z semantic version 
     // scheme that is described at [http://semver.org/](http://semver.org/)
     // and we should follow this versioning for our package.
+    //Comment out go auto increase version on execution of this file
     "version": "0.1.0",
     // URL to the homepage for this package.
     "homepage": "https://github.com/michieljoris/gitjs",
     // An array of keywords used to describe this package to search engines,
     // mainly for people searching within the npm universe.
     "keywords": [
-        "scaffold", "seed", "template"
+        
     ],
     // Where is the source of truth for this code, and what type of repo is it?
     "repository": {
@@ -52,7 +53,7 @@ module.exports = {
     "author": {
         "name": "Michiel van Oosten",
         "email": "mail@axion5.net",
-        "url": "http://blog.axion5.net/"
+        "url": "http://www.axion5.net/"
     },
     // What licenses govern this code, and where is the license associated
     // with this code?
@@ -88,6 +89,18 @@ module.exports = {
     // **NOTE:** We don't have any dependencies for this module. See the
     // `devDependencies` block for the way to include dependencies.
     "dependencies": {
+        // "bb-server": "0.4.x",
+        // "html-builder": "0.1.x",
+        // "bb-server": "git://github.com/michieljoris/bb-server.git",
+        // "html-builder": "git://github.com/michieljoris/html-builder.git",
+        // "fs-extra": "0.8.x"
+        "gift" : "0.1.x"
+        
+	// "nodemailer": "*",
+	// "dbox": "*",
+        // "nodemailer": "0.5.x",
+        // "dbox": "0.6.x",
+        // "colors": "*",
     },
     // What dependencies are useful only for developers?
     // Installed when we `npm install` in our working directory, but not 
@@ -100,8 +113,8 @@ module.exports = {
     // * **fs-extra**: Mixin for the fs (filesystem) module.
     // * **doccoh**: Documentation utility for this code.
     "devDependencies": {
-        "fs-extra": "0.3.x",
-        "doccoh": "0.4.1"
+        // "doccoh": "*"
+        // "docco": "*"
     },
     // Should this package be prevented from accidental publishing by npm?
     // The default is false (not hidden), but I include this here for doc
@@ -116,11 +129,12 @@ module.exports = {
     // 
     //     npm run-script script-name
     //
-    // `dist` is a non-standard script, and can be run with:
+    // `docs` is a non-standard script, and can be run with:
     //
-    //     npm run-script dist
+    //     npm run-script docs
     "scripts": {
-        "dist": "node dist; node_modules/.bin/doccoh src/package.js"
+        // "docs": "node node_modules/.bin/doccoh package.js"
+        "docs": "node node_modules/.bin/docco src/gitjs.js"
     }
 };
 
@@ -129,16 +143,29 @@ module.exports = {
 // file.
 
 var fs = require("fs-extra");
-var packagejson = require("./package.js");
+var packagejs = require("./package.js");
+var v = '0.1.0';
+if (!packagejs.version) {
+    
+    try {
+        v = require('./package.json').version;
+    } catch(e) {
+        console.log('Created new package.json. You\'re at version 0.0.0.');
+    } 
+    var s = v.split('.');
+    v = [s[0],s[1],parseInt(s[2]) + 1].join('.');
+    packagejs.version = v;
+}
 
 console.log("Writing the package.json file out from package.js...");
-fs.writeJSONFile("package.json", packagejson, function(err){
+fs.writeJSONFile("package.json", packagejs, function(err){
     if (err) {
         console.log("Error writing package.json");
         console.log(err);
         console.log("");
     }
     else {
+        console.log(packagejs);
         console.log("package.json written successfully.");
         console.log("");
     }

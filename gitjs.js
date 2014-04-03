@@ -17,7 +17,6 @@ function sync(repoPath, cb) {
         }
         else {
             console.log("Status:", repoStatus.files);   
-            Object.keys
             if (Object.keys(repoStatus.files).length>0) {
                 console.log('Adding files');
                 repo.add('.', function(err) {
@@ -26,8 +25,10 @@ function sync(repoPath, cb) {
                         cb();
                     }
                     else {
-                        console.log('Commiting');
-                        repo.commit('from gitjs', function(err) {
+                        var message = 'gitjs sync ' + new Date();
+                        console.log('Commiting: ' + message);
+                        
+                        repo.commit(message, function(err) {
                             if (err) {
                                 console.log('Error commiting:' , err);   
                                 cb();
