@@ -19,7 +19,7 @@ var repoPaths = [
   "/home/michieljoris/mysrc/javascript/denodify-core", 
     
   "/home/michieljoris/mysrc/javascript/cape", 
-  "/home/michieljoris/mysrc/javascript/test-cape", 
+  "/home/michieljoris/www/sites/test-cape", 
     
     
     
