@@ -53,7 +53,7 @@ var repoPaths = [
   "/home/michieljoris/www/sites/roster_help",
     
   "/home/michieljoris/www/sites/edge4", 
-  "/home/michieljoris/mysrc/javascript/deploy-meteor", 
+  "/home/michieljoris/mysrc/javascript/deploymeteor", 
   "/home/michieljoris/mysrc/javascript/less-monitor", 
     
   "/home/michieljoris/www/sites/testsite",
