@@ -1,7 +1,7 @@
 require('colors');
 var git  = require( 'gift');
 
-console.log(process.platform);
+// console.log(process.platform);
 
 // console.log(git);
 
