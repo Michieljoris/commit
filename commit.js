@@ -34,7 +34,7 @@ var repoPaths = [
     
   "/home/michieljoris/mysrc/javascript/logthis", 
     
-  "/home/michieljoris/mysrc/javascript/roster", 
+  // "/home/michieljoris/mysrc/javascript/roster/app",  //develop
   "/home/michieljoris/mysrc/javascript/tw", 
   "/home/michieljoris/mysrc/javascript/validate_doc_update", 
   "/home/michieljoris/mysrc/javascript/trello-export", 
