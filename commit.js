@@ -13,6 +13,7 @@ var repoPaths = [
   "/home/michieljoris/mysrc/javascript/cachejs",
   "/home/michieljoris/mysrc/javascript/url_washer",
   "/home/michieljoris/mysrc/javascript/node-crawler",
+  "/home/michieljoris/mysrc/javascript/bb-cms",
     
   "/home/michieljoris/mysrc/javascript/html-builder", 
   "/home/michieljoris/mysrc/javascript/denodify", 
