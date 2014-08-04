@@ -64,6 +64,7 @@ var repoPaths = [
     
   "/home/michieljoris/mysrc/job_applications",
   "/home/michieljoris/mysrc/lisp/scheme/sicp",
+  "/home/michieljoris/mysrc/code-x",
     
   // "/home/michieljoris/.i3wm",
   // "/home/michieljoris/.emacs.d",
