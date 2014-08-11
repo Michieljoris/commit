@@ -67,7 +67,7 @@ var repoPaths = [
   "/home/michieljoris/mysrc/javascript/code-x",
     
     
-  "/home/michieljoris/mysrc/clojure/clojure-playground",
+  "/home/michieljoris/mysrc/clojure/playground",
     
   "/home/michieljoris/.i3",
   "/home/michieljoris/.emacs.d",
