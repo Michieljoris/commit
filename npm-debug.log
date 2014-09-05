@@ -1,0 +1,125 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/michieljoris/bin/node',
+1 verbose cli   '/home/michieljoris/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink /home/michieljoris/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/michieljoris/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+13 verbose folder .
+14 info prepublish cachejs@0.1.11
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/michieljoris/.npm/1f1177db-tar.lock
+17 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+18 verbose lock tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz /home/michieljoris/.npm/d43e6c51-28326-0-9374159404542297-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+22 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+23 verbose tar unpack /home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+24 silly lockFile 7f732eea-joris-npm-cachejs-0-1-11-package tar:///home/michieljoris/.npm/cachejs/0.1.11/package
+25 verbose lock tar:///home/michieljoris/.npm/cachejs/0.1.11/package /home/michieljoris/.npm/7f732eea-joris-npm-cachejs-0-1-11-package.lock
+26 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+27 verbose lock tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz /home/michieljoris/.npm/d43e6c51-28326-0-9374159404542297-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm extractEntry README.md
+32 silly gunzTarPerm extractEntry commit.js
+33 silly gunzTarPerm extractEntry package.js
+34 silly gunzTarPerm extractEntry LICENSE.txt
+35 silly gunzTarPerm extractEntry bin/commit.js
+36 silly lockFile 7f732eea-joris-npm-cachejs-0-1-11-package tar:///home/michieljoris/.npm/cachejs/0.1.11/package
+37 silly lockFile 7f732eea-joris-npm-cachejs-0-1-11-package tar:///home/michieljoris/.npm/cachejs/0.1.11/package
+38 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+39 silly lockFile d43e6c51-28326-0-9374159404542297-tmp-tgz tar:///home/michieljoris/tmp/npm-5689-_tfNX4Dy/1409888628326-0.9374159404542297/tmp.tgz
+40 silly lockFile 3a52ce78- .
+41 silly lockFile 3a52ce78- .
+42 silly publish { name: 'cachejs',
+42 silly publish   description: 'Implementation of async LRU and ARC cache.',
+42 silly publish   version: '0.1.11',
+42 silly publish   homepage: 'https://github.com/michieljoris/cachejs',
+42 silly publish   keywords: [ 'cache', 'lru', 'arc' ],
+42 silly publish   repository:
+42 silly publish    { type: 'git',
+42 silly publish      url: 'https://github.com/michieljoris/cachejs.git' },
+42 silly publish   author:
+42 silly publish    { name: 'Michiel van Oosten',
+42 silly publish      email: 'mail@axion5.net',
+42 silly publish      url: 'http://blog.axion5.net/' },
+42 silly publish   licenses:
+42 silly publish    [ { type: 'MIT',
+42 silly publish        url: 'http://github.com/michieljoris/cachejs/blob/master/LICENSE.txt' } ],
+42 silly publish   main: './cachejs',
+42 silly publish   engines: { node: '>= 0.6.x' },
+42 silly publish   dependencies: {},
+42 silly publish   devDependencies: { 'fs-extra': '0.3.x', doccoh: '0.4.1' },
+42 silly publish   private: false,
+42 silly publish   scripts: { dist: 'node dist; node_modules/.bin/doccoh src/package.js' },
+42 silly publish   readme: 'gitjs\n-----------\n\nSimple utility to sync my repos to github. \n\nSimplifies things when switching from desktop to laptop and back.\n\nTODO\n\n* Pulling back from github, using proper branch\n* Nicer output.\n\n',
+42 silly publish   readmeFilename: 'README.md',
+42 silly publish   bugs: { url: 'https://github.com/michieljoris/cachejs/issues' },
+42 silly publish   _id: 'cachejs@0.1.11',
+42 silly publish   _shasum: '0d559e80b4f8ec195e5f87950ccf6765839f93d1',
+42 silly publish   _from: '.' }
+43 verbose url raw cachejs
+44 verbose url resolving [ 'https://registry.npmjs.org/', './cachejs' ]
+45 verbose url resolved https://registry.npmjs.org/cachejs
+46 info trying registry request attempt 1 at 13:43:48
+47 http PUT https://registry.npmjs.org/cachejs
+48 http 403 https://registry.npmjs.org/cachejs
+49 verbose headers { date: 'Fri, 05 Sep 2014 03:43:58 GMT',
+49 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'cache-control': 'max-age=60',
+49 verbose headers   'content-length': '2894',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   'x-served-by': 'cache-syd1622-SYD',
+49 verbose headers   'x-cache': 'MISS',
+49 verbose headers   'x-cache-hits': '0',
+49 verbose headers   'x-timer': 'S1409888638.124226,VS0,VE412',
+49 verbose headers   'keep-alive': 'timeout=10, max=50',
+49 verbose headers   connection: 'Keep-Alive' }
+50 error publish Failed PUT 403
+51 error Error: forbidden cannot modify pre-existing version: 0.1.11
+51 error old={"name":"cachejs","description":"Implementation of async LRU and ARC cache.","version":"0.1.11","homepage":"https://github.com/michieljoris/cachejs","keywords":["cache","lru","arc"],"repository":{"type":"git","url":"https://github.com/michieljoris/cachejs.git"},"author":{"name":"Michiel van Oosten","email":"mail@axion5.net","url":"http://blog.axion5.net/"},"licenses":[{"type":"MIT","url":"http://github.com/michieljoris/cachejs/blob/master/LICENSE.txt"}],"main":"./cachejs","engines":{"node":">= 0.6.x"},"dependencies":{},"devDependencies":{"fs-extra":"0.3.x","doccoh":"0.4.1"},"private":false,"scripts":{"dist":"node dist; node_modules/.bin/doccoh src/package.js"},"bugs":{"url":"https://github.com/michieljoris/cachejs/issues"},"_id":"cachejs@0.1.11","_shasum":"57f4f372b9a720666577e28f04321c560f74c303","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"michieljoris","email":"mail@axion5.net"},"maintainers":[{"name":"michieljoris","email":"michieljoris@gmail.com"}],"dist":{"shasum":"57f4f372b9a720666577e28f04321c560f74c303","tarball":"http://registry.npmjs.org/cachejs/-/cachejs-0.1.11.tgz"}}
+51 error new={"name":"cachejs","description":"Implementation of async LRU and ARC cache.","version":"0.1.11","homepage":"https://github.com/michieljoris/cachejs","keywords":["cache","lru","arc"],"repository":{"type":"git","url":"https://github.com/michieljoris/cachejs.git"},"author":{"name":"Michiel van Oosten","email":"mail@axion5.net","url":"http://blog.axion5.net/"},"licenses":[{"type":"MIT","url":"http://github.com/michieljoris/cachejs/blob/master/LICENSE.txt"}],"main":"./cachejs","engines":{"node":">= 0.6.x"},"dependencies":{},"devDependencies":{"fs-extra":"0.3.x","doccoh":"0.4.1"},"private":false,"scripts":{"dist":"node dist; node_modules/.bin/doccoh src/package.js"},"readme":"gitjs\u000a-----------\u000a\u000aSimple utility to sync my repos to github. \u000a\u000aSimplifies things when switching from desktop to laptop and back.\u000a\u000aTODO\u000a\u000a* Pulling back from github, using proper branch\u000a* Nicer output.\u000a\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/michieljoris/cachejs/issues"},"_id":"cachejs@0.1.11","_shasum":"0d559e80b4f8ec195e5f87950ccf6765839f93d1","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"michieljoris","email":"mail@axion5.net"},"maintainers":[{"name":"michieljoris","email":"mail@axion5.net"}],"dist":{"shasum":"0d559e80b4f8ec195e5f87950ccf6765839f93d1","tarball":"http://registry.npmjs.org/cachejs/-/cachejs-0.1.11.tgz"}}: cachejs
+51 error     at RegClient.<anonymous> (/media/212gig/opt/node-v0.10.28-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+51 error     at Request._callback (/media/212gig/opt/node-v0.10.28-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+51 error     at Request.self.callback (/media/212gig/opt/node-v0.10.28-linux-x64/lib/node_modules/npm/node_modules/request/request.js:123:22)
+51 error     at Request.EventEmitter.emit (events.js:98:17)
+51 error     at Request.<anonymous> (/media/212gig/opt/node-v0.10.28-linux-x64/lib/node_modules/npm/node_modules/request/request.js:893:14)
+51 error     at Request.EventEmitter.emit (events.js:117:20)
+51 error     at IncomingMessage.<anonymous> (/media/212gig/opt/node-v0.10.28-linux-x64/lib/node_modules/npm/node_modules/request/request.js:844:12)
+51 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+51 error     at _stream_readable.js:919:16
+51 error     at process._tickCallback (node.js:419:13)
+52 error If you need help, you may report this *entire* log,
+52 error including the npm and node versions, at:
+52 error     <http://github.com/npm/npm/issues>
+53 error System Linux 3.11.0-12-generic
+54 error command "/home/michieljoris/bin/node" "/home/michieljoris/bin/npm" "publish"
+55 error cwd /media/212gig/mysrc/javascript/commit
+56 error node -v v0.10.28
+57 error npm -v 1.4.9
+58 verbose exit [ 1, true ]
