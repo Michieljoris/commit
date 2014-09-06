@@ -239,7 +239,7 @@ function recur() {
         });
     }
     else {
-        updateNpm();
+        // updateNpm();
     }
 }
 
