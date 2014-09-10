@@ -241,7 +241,6 @@ function updateNpm() {
 
 function recur() {
     var repoPath = repoPaths.pop();
-    npmList = [];
     if (repoPath) {
         sync(repoPath, function() {
             recur();
@@ -255,6 +254,7 @@ function recur() {
 }
 
 // updateNpm();
+npmList = [];
 recur();
 
 // Sync call to exec()
