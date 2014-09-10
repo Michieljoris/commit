@@ -238,24 +238,32 @@ function updateNpm() {
 }
 
 
-
-function recur() {
-    var repoPath = repoPaths.pop();
-    if (repoPath) {
-        sync(repoPath, function() {
-            recur();
-        });
+function updateGit(paths, cb) {
+    function recur() {
+        var repoPath = paths.pop();
+        if (repoPath) {
+            sync(repoPath, function() {
+                recur();
+            });
+        }
+        else cb();
     }
-    else {
-        console.log('Updating npm..');
-        console.log(npmList);
-        updateNpm();
-    }
+    recur();
 }
 
-// updateNpm();
 npmList = [];
-recur();
+updateGit(repoPaths, function() {
+    console.log('Updating npm..');
+    console.log(npmList);
+    updateNpm();
+    updateGit(npmList, function() {
+        console.log('Done!!');
+    });
+    
+});
+
+// updateNpm();
+// recur();
 
 // Sync call to exec()
 
