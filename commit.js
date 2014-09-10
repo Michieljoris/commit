@@ -249,6 +249,7 @@ function recur() {
     }
     else {
         console.log('Updating npm..');
+        console.log(npmList);
         updateNpm();
     }
 }
