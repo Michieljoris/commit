@@ -182,7 +182,7 @@ function sync(repoPath, cb) {
                                 repo.remote_push('origin', function(err) {
                                     if (err) console.log('Error pushing:'.error , err);
                                     else {
-                                        updateNpm.push(repo.path);
+                                        npmList.push(repo.path);
                                         console.log('Done! Added to update npm list'.green); 
                                     }
                                     cb();
