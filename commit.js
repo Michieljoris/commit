@@ -221,6 +221,7 @@ function updateNpm() {
     var path = modules[0];
     var out;
     modules.filter(function(m) {
+        console.log(m, npmList.indexOf(m));
         return npmList.indexOf(m) !== -1;
     }).forEach(function(module){
         cd(module);
