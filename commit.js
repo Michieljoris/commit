@@ -77,6 +77,8 @@ var modules = [
     
 ];
 
+var npmList;
+
 var repoPaths = [
   "/home/michieljoris/mysrc/javascript/bb-server", 
   "/home/michieljoris/mysrc/javascript/recaster", 
@@ -160,7 +162,7 @@ function sync(repoPath, cb) {
                 cb();
             }
             else if (Object.keys(repoStatus.files).length>0) {
-                console.log('Adding files');
+                console.log('Adding files'); 
                 repo.add('-A', function(err) {
                     if (err) {
                         console.log('Error staging files: '.red , err);   
@@ -179,7 +181,10 @@ function sync(repoPath, cb) {
                                 console.log('Pushing', repo);
                                 repo.remote_push('origin', function(err) {
                                     if (err) console.log('Error pushing:'.error , err);
-                                    else console.log('Done!'.green);
+                                    else {
+                                        updateNpm.push(repo.path);
+                                        console.log('Done! Added to update npm list'.green); 
+                                    }
                                     cb();
                                 });
                             
@@ -215,7 +220,9 @@ function print(str) { console.log(str); }
 function updateNpm() {
     var path = modules[0];
     var out;
-    modules.forEach(function(module){
+    modules.filter(function(m) {
+        return npmList.indexOf(m) !== -1;
+    }).forEach(function(module){
         cd(module);
         out = exec( 'node '+ 'package.js', {silent:true}).output;
         console.log('Bumped version for ' + module);
@@ -233,13 +240,15 @@ function updateNpm() {
 
 function recur() {
     var repoPath = repoPaths.pop();
+    npmList = [];
     if (repoPath) {
         sync(repoPath, function() {
             recur();
         });
     }
     else {
-        // updateNpm();
+        console.log('Updating npm..');
+        updateNpm();
     }
 }
 
