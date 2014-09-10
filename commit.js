@@ -243,8 +243,8 @@ function recur() {
     }
 }
 
-recur();
 // updateNpm();
+recur();
 
 // Sync call to exec()
 
