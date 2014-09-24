@@ -140,6 +140,7 @@ var repoPaths = [
     
     
     "/home/michieljoris/mysrc/lisp/clojure/playground",
+    "/home/michieljoris/mysrc/erlang/playground",
     
     "/home/michieljoris/.i3",
     "/home/michieljoris/.emacs.d",
