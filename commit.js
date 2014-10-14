@@ -138,7 +138,7 @@ var repoPaths = [
     "/home/michieljoris/mysrc/job_applications",
     "/home/michieljoris/mysrc/lisp/scheme/sicp",
     "/home/michieljoris/mysrc/javascript/code-x",
-    "/home/michieljoris/mysrc/org/readme-org.cheatsheet",
+    "/home/michieljoris/mysrc/org/readme.org-cheatsheet",
     
     
     "/home/michieljoris/mysrc/lisp/clojure/playground",
