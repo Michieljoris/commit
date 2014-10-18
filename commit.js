@@ -102,6 +102,7 @@ var repoPaths = [
     "/home/michieljoris/mysrc/javascript/node-haproxy", 
     "/home/michieljoris/mysrc/javascript/serf-rpc", 
     "/home/michieljoris/mysrc/javascript/vouchdb", 
+    "/home/michieljoris/mysrc/docker", 
     
     
     "/home/michieljoris/mysrc/javascript/crypto-utils", 
