@@ -103,7 +103,7 @@ var repoPaths = [
     "/home/michieljoris/mysrc/javascript/serf-rpc", 
     "/home/michieljoris/mysrc/javascript/vouchdb", 
     "/home/michieljoris/mysrc/docker/Dockerfiles", 
-    "/home/michieljoris/mysrc/docker/docker-rcouch", 
+    "/home/michieljoris/mysrc/docker/rcouch", 
     
     
     "/home/michieljoris/mysrc/javascript/crypto-utils", 
