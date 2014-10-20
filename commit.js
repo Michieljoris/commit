@@ -127,10 +127,10 @@ var repoPaths = [
     "/home/michieljoris/www/sites/seo_laundry",
     "/home/michieljoris/www/sites/personalinfo",
     "/home/michieljoris/www/sites/roster_help",
-    "/home/michieljoris/www/sites/hexo-blog",
+    // "/home/michieljoris/www/sites/hexo-blog",
     
     
-    "/home/michieljoris/mysrc/javascript/blog",
+    "/home/michieljoris/mysrc/javascript/blog-example",
     "/home/michieljoris/www/sites/edge4", 
     "/home/michieljoris/mysrc/javascript/deploymeteor", 
     "/home/michieljoris/mysrc/javascript/less-monitor", 
