@@ -67,7 +67,7 @@ var modules = [
   // "/home/michieljoris/mysrc/javascript/code-x",
     
     
-  // "/home/michieljoris/mysrc/lisp/clojure/playground",
+  ,"/home/michieljoris/mysrc/lisp/clojure/playground"
     
   // "/home/michieljoris/.i3",
   // "/home/michieljoris/.emacs.d",
