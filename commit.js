@@ -67,7 +67,7 @@ var modules = [
   // "/home/michieljoris/mysrc/javascript/code-x",
     
     
-  ,"/home/michieljoris/mysrc/lisp/clojure/playground"
+  // ,"/home/michieljoris/mysrc/lisp/clojure/playground"
     
   // "/home/michieljoris/.i3",
   // "/home/michieljoris/.emacs.d",
@@ -143,7 +143,9 @@ var repoPaths = [
     "/home/michieljoris/mysrc/org/readme.org-cheatsheet",
     
     
+    "/home/michieljoris/mysrc/lisp/clojure/templates/mjstarter",
     "/home/michieljoris/mysrc/lisp/clojure/playground",
+
     "/home/michieljoris/mysrc/erlang/playground",
     
     "/home/michieljoris/.i3",
