@@ -104,6 +104,7 @@ var repoPaths = [
     "/home/michieljoris/mysrc/javascript/vouchdb", 
     "/home/michieljoris/mysrc/docker/playground", 
     "/home/michieljoris/mysrc/docker/supervisor", 
+
     "/home/michieljoris/mysrc/docker/rcouch", 
     
     
