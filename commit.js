@@ -167,7 +167,7 @@ function sync(repoPath, cb) {
         }
         else {
             if (repoStatus.clean) {
-                console.log('All up to date'.green);
+                console.log('All up to date'.green + ' ' + repo.path);
                 cb();
             }
             else if (Object.keys(repoStatus.files).length>0) {
@@ -183,7 +183,7 @@ function sync(repoPath, cb) {
                         
                         repo.commit(message, function(err) {
                             if (err) {
-                                console.log('Error commiting:'.red , err);   
+                                console.log('Error commiting:'.red ,repo.path, err);   
                                 cb();
                             }
                             else {
