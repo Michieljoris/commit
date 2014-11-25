@@ -125,7 +125,7 @@ var repoPaths = [
     
     "/home/michieljoris/www/sites/dbeditor",
     "/home/michieljoris/www/sites/greenglass",
-    "/home/michieljoris/www/sites/michieljoris.github.io",
+    // "/home/michieljoris/www/sites/michieljoris.github.io",
     "/home/michieljoris/www/sites/seo_laundry",
     "/home/michieljoris/www/sites/personalinfo",
     "/home/michieljoris/www/sites/roster_help",
