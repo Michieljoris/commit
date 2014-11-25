@@ -162,7 +162,7 @@ function sync(repoPath, cb) {
     console.log("Processing:", repo.path);
     repo.status(function(err, repoStatus) {
         if (err) {
-            console.log('Error fetching status: '.red , err);   
+            console.log('Error fetching status: '.red , repo.path, err);   
             cb();
         }
         else {
