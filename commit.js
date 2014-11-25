@@ -133,7 +133,7 @@ var repoPaths = [
     
     
     "/home/michieljoris/mysrc/javascript/blog-example",
-    "/home/michieljoris/www/sites/edge4", 
+    // "/home/michieljoris/www/sites/edge4", 
     "/home/michieljoris/mysrc/javascript/deploymeteor", 
     "/home/michieljoris/mysrc/javascript/less-monitor", 
     
